@@ -1,0 +1,97 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: azure;
+}
+.area{
+	width: 370px;
+	height: 590px;
+	border:5px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.layoutarea{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+.layoutarea>div{
+	width: 360px;
+	padding: 5px;
+	/*border:1px solid black;*/
+}
+.layoutarea>.display{
+	background-color: black;
+	font-size: 2em;
+	height: 100px;
+	padding: 10px 10px;
+	color:white;
+}
+.numpad{
+	display: grid;
+	grid-template-columns: 300px 50px;
+}
+.numkey{
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	align-content: space-around;
+}
+.numkey>div{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 5px;
+	width: 80px;
+	height: 100px;
+	background-color: black;
+	color:white;
+
+	transition: background-color 0.5s ease-in-out;
+
+}
+.opkey{
+	display: flex;
+	flex-wrap: wrap;
+}
+.opkey>div{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	width: 46px;
+	margin: 2px;
+	padding: 16px 2px;
+	background-color: black;
+	color:white;
+}
+.numkey>div:hover{
+	margin-top: 5px;
+	color:black;
+	background-color: white;
+
+    
+
+}
+.opkey>div:hover{
+	margin-top: 5px;
+	color:black;
+	background-color: white;
+}
+.numpad>div:hover{
+	margin-top:5px;
+	color:white;
+}
+.ht{
+	display: wrap;
+	background-color: black;
+	color:white;
+}
+.ht>div:hover{
+	color:black;
+	background-color: white;
+}
